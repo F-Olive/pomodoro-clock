@@ -1,0 +1,58 @@
+/*
+Yellow #ffbc42
+Pink #d81159
+Green #218380
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  font-size: 1.625rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings {
+  display: flex;
+}
+
+/* Add margin to session-settings and break-settings to space them out  */
+
+/* Style the buttons (think about states) */
+
+.session-settings,
+.break-settings {
+  margin: 5px;
+}
+
+button {
+  border-radius: 50px;
+  border: none;
+  background: #d81159;
+  color: white;
+  padding: 0.7rem 2rem;
+  box-shadow: 0px 3px 15px #410a1e4c;
+  transition: 0.3s ease-in-out;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 4px;
+}
+
+button:hover,
+button:focus {
+  background: #b12156;
+  box-shadow: none;
+}
+
+.settings p {
+  margin: 0;
+}

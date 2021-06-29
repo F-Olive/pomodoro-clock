@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Create the layout of timer
+        1. Section for timer
+            - clock 
+            - Start/Reset/Pause buttons
+        2. Section for settings
+            - Setting for timer
+            - Setting for breaks
+        -->
+    <main>
+        <h1>Pomodoro Timer</h1>
+        <div class="clock">
+            <div class="clock-face">
+                <h3 class="time-remaining">30</h3>
+                <button id="start-timer">START</button>
+                <button id="pause-timer">PAUSE</button>
+                <button id="reset-timer">RESET</button>
+            </div>
+        </div>
+
+        <div class="settings">
+            <div class="session-settings">
+                <div id="session-time">
+                    <span class="material-icons">arrow_drop_up</span>
+                    <p class="session-time-value">30</p>
+                    <span class="material-icons">arrow_drop_down</span>
+                </div>
+            </div>
+            <div class="break-settings">
+                <div id="break-time">
+                    <span class="material-icons">arrow_drop_up</span>
+                    <p class="break-time-value">30</p>
+                    <span class="material-icons">arrow_drop_down</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
