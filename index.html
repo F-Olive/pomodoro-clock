@@ -12,9 +12,7 @@
 </head>
 
 <body>
-
-
-    <!-- Create the layout of timer
+        <!-- Create the layout of timer
         1. Section for timer
             - clock 
             - Start/Reset/Pause buttons
@@ -23,6 +21,7 @@
             - Setting for breaks
         -->
     <main>
+        <!-- Timer Clock Face and Buttons -->
         <h1>Pomodoro Timer</h1>
         <div class="clock">
             <div class="clock-face">
@@ -32,25 +31,27 @@
                 <button id="reset-timer">RESET</button>
             </div>
         </div>
-
+        <!-- Set Session Length. This is the session timer with an up and down arrow to select the session time -->
         <div class="settings">
             <div class="session-settings">
                 <div id="session-time">
-                    <span class="material-icons">arrow_drop_up</span>
+                    <span id="sessionTimeUp"class="material-icons">arrow_drop_up</span>
                     <p class="session-time-value">30</p>
-                    <span class="material-icons">arrow_drop_down</span>
+                    <p class="session-time-value">Session Length</p>
+                    <span id="sessionTimeDown" class="material-icons">arrow_drop_down</span>
                 </div>
             </div>
+            <!-- Set Break Length. Up and down arrow to select the break length -->
             <div class="break-settings">
                 <div id="break-time">
                     <span class="material-icons">arrow_drop_up</span>
-                    <p class="break-time-value">30</p>
+                    <p class="break-time-value">5</p>
+                    <p class="break-time-value">Break Length</p>
                     <span class="material-icons">arrow_drop_down</span>
                 </div>
             </div>
         </div>
     </main>
-
     <script src="index.js"></script>
 </body>
 
